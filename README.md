@@ -23,7 +23,7 @@ I found 3 active Vulnurbulities with the following plugins installed:
 ## EXPLOITS
 
 1- Contact Form 7 < 5.3.2 - Unrestricted File Upload
-  This Vunlurblitiy allows the attacker to create and upload a file with filename containing double-extensions, sperated by a non-printable or special characters.
+  This vulnerability allows the attacker to create and upload a file with filename containing double-extensions, sperated by a non-printable or special characters.
   
   - Proof Of Concept:
   This plugin doesn't check for empty spaces therefore even if the required attachment file is .png or .jpg, we can simply add an extra extention to our exploit.php      file. 
@@ -34,5 +34,7 @@ I found 3 active Vulnurbulities with the following plugins installed:
 
 
 2- Reflex Gallery <= 3.1.3 - Arbitrary File Upload
+  This vulnerability was exploited by msfconsole by searching for specific exploit in the databse. 
+![Exploit2](https://user-images.githubusercontent.com/96266650/163274154-47a1fa3b-e536-442f-ba85-a64ab71421a7.png)
 
 3- Reflex Gallery - jQuery prettyPhoto DOM Cross-Site Scripting (XSS)
