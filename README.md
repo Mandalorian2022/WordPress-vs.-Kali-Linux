@@ -33,8 +33,27 @@ I found 3 active Vulnurbulities with the following plugins installed:
 
 
 
+
 2- Reflex Gallery <= 3.1.3 - Arbitrary File Upload
-  This vulnerability was exploited by msfconsole by searching for specific exploit in the databse. 
+  This vulnerability was exploited by msfconsole by searching for specific exploit in the database. 
 ![Exploit2](https://user-images.githubusercontent.com/96266650/163274154-47a1fa3b-e536-442f-ba85-a64ab71421a7.png)
+Simple `ls` command now shows all the pictures that I uploaded along with other folders on my wordpress server.
+
+![exploit2-2](https://user-images.githubusercontent.com/96266650/163285943-9dd4a077-9689-43fa-b061-8bc34691a80a.gif)
+![image](https://user-images.githubusercontent.com/96266650/163293892-efbc5e8b-3046-4746-a8a2-1c87773fea6f.png)
+
+
+Now that we have access to the files. we can also delete them by using `rm`.
+
+![image](https://user-images.githubusercontent.com/96266650/163286812-6bf9046b-90ea-4a8d-b714-4d4985af71b5.png)
+
 
 3- Reflex Gallery - jQuery prettyPhoto DOM Cross-Site Scripting (XSS)
+Since I knew I already have an open access to uploading and deleting material and folders from meterpreter command line. I used some basic vim command to edit and 
+deploy more malicious commands. I edited the new user folder and adding a xss command and adding new users to list. and ultimatly by doing this I can edit any folder and delete or add more XSS commands and files. 
+
+![image](https://user-images.githubusercontent.com/96266650/163295291-6b88f2ff-48fb-4ea8-8824-707000b8ae8b.png)
+![image](https://user-images.githubusercontent.com/96266650/163295443-4bf9eec8-fbae-49c1-9c9a-f8535eede8c3.png)
+
+
+
